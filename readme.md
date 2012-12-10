@@ -1,6 +1,16 @@
 ###fileup-node    
 File upload helper for nodejs/express
 
+POST to /doupl    
+    
+Make forms like this..
+````
+<form method="post" enctype="multipart/form-data" action="/doupl">
+    <input type="file" name="myfile">
+    <input type="submit">
+</form>
+````
+
 ###app.js
 ````
 	var express = require('express'), app = express();

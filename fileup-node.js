@@ -8,7 +8,7 @@ module.exports = function(express, app, savedir, onupload){
     app.use(express.bodyParser({uploadDir: savedir}));
 	
 	app.all('/upl', function(r,s){
-		s.send('<form method="post" enctype="multipart/form-data" action="/doupl"><input type="file" name="myfile"><input type="submit"></form><br>or  curl -F filedata=@localfile.jpg localhost:85/doupl');
+		s.send('<form method="post" enctype="multipart/form-data" action="/doupl"><input type="file" name="myfile"><input type="submit"></form>');
 	})
 	app.post('/doupl', function(r,s){
 			o.log('Getting file upload', r.files);

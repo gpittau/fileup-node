@@ -7,9 +7,10 @@
  	var fileup = require('./fileup-node.js')(express, app, './files', function(r,s,f){
 		 s.end('saved file as ' + f.filename);
 	});
+	
+	// comment this for no logging
 	fileup.log = console.log;
 	
-
  	app.get('/', function(r,s){
  		s.send('example is at /upl')
  	})
