@@ -1,0 +1,22 @@
+{
+  "name": "fileup-node",
+  "description": "File upload helper for Nodejs/Express",
+  "url": "http://github.com/dpweb/fileup-node/",
+  "keywords": [
+    "util",
+    "nodejs"
+  ],
+  "author": {
+    "name": "C Borkert",
+    "email": "ILIKECHEESE@dpsw.info"
+  },
+  "dependencies": {
+	"express":"3.0.x"
+  },
+  "main": "fileup-node.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dpweb/fileup-node.git"
+  },
+  "version": "0.0.1"
+}
