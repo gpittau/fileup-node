@@ -11,6 +11,13 @@ Make forms like this..
 </form>
 ````
 
+### Upload using curl   
+(note, by the way, curl === lovely)
+
+````
+$ curl -F myfile=@<filename> localhost:85/doupl
+````
+
 ###app.js
 ````
 	var express = require('express'), app = express();
